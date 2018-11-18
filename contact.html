@@ -5,6 +5,9 @@
     <title>Contact | Mohammed Farahat</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -17,7 +20,6 @@
                     <a href="index.html">About</a>
                     <a href="portfolio.html">Portfolio</a>
                     <a href="contact.html">Contact</a>
-                    <a href="https://farahatco.github.io/Word-Guess-Game/">My Game</a>
                 </nav>
             </div>
         </div>
@@ -26,12 +28,12 @@
         <form>
             <div class="form-group">
                 <label for="Fullname">Name</label>
-                <input type="text" class="form-control" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">Please Enter Your Full Name.</small>
+                <input type="text" class="form-control" placeholder="Enter Your Name" id="name">
+                <small id="nameHelp" class="form-text text-muted">Please Enter Your Full Name.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                     placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
@@ -39,7 +41,7 @@
                 <label for="comment">Message</label>
                 <textarea class="form-control" rows="5" id="comment"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         </form>
     </div>
     </div>
@@ -48,6 +50,7 @@
             <h1 class="text-center bg-success">Copyright &copy; </h1>
         </div>
         </footer>
+        <script src="contact.js"></script>
 </body>
 
 </html>
