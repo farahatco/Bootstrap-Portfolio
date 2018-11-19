@@ -18,7 +18,6 @@ $(document).ready(function(){
  e.preventDefault()
                 var name = $("#name").val().trim();
                 var email = $("#email").val().trim();
-               
                 var comment = $("#comment").val().trim();
                 contactRef = contactRef.push();
                 contactRef.set({
@@ -26,5 +25,12 @@ $(document).ready(function(){
                     email: email,
                     comment: comment
                 })
+                $("#name").val(" ");
+                $("#email").val(" ");
+                $("#comment").val(" ");
+                $("#alert").append("Data Has Been Saved... ");
+                $("#alert").delay(2000).hide(1)
+                
+
   })
 })
